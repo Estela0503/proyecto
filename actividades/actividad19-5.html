@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>    
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title>Ejemplo 045</title>
+        <script>
+           let nota = prompt('Ingrese una nota entre 1 y 10: ');
+            nota = parseInt(nota);
+
+            let varLetras = "";
+            switch(nota){
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    varLetras = "No aprovado";
+                break;
+                case 5:
+                    varLetras = "Aprobado";
+                break;
+                case 6:
+                case 7:
+                    varLetras = "Bien";
+                break;
+                case 8:
+                case 9:
+                    varLetras = "Notable";
+                break;
+                case 10:
+                    varLetras = "Excelente";
+                break;
+                default:
+                    alert('Valor no valido');
+                break;
+            }
+            alert('Valor equivalente: ' + varLetras);
+        </script>
+    </head>
+    <body> 
+        <p>Parrafo ejercicio 045</p>
+        <p>Programa en javascript para ingresar una edad y obtener un estado
+        </p>
+            <br />
+    <table border="2px" cellpadding="5" align="center" bgcolor="aqua">
+        <tr><td><a href="./index.html">Inicio</a></td></tr>
+    </table>  
+    </body>
+</html>

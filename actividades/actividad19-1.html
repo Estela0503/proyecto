@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>    
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title>Ejemplo 041</title>
+        <script>
+           let num=prompt("Ingresa un numero entre 1 y 4: ");
+            let est = "";
+            num = parseInt(num);
+            switch(num){
+                case 1: 
+                    est = "Verano"
+                break;
+                case 2:
+                    est = "Otoño"
+                break;
+                case 3:
+                    est = "Invierno"
+                break;
+                case 4:
+                    est = "Primavera"
+                break;
+                default:
+                    console.log('default')
+                break;
+            }
+            alert('Estación: ' + est);
+        </script>
+    </head>
+    <body> 
+        <p>Parrafo ejercicio 041</p>
+        <p>Programa en javascript para devolver la estacion del año de acuerdo a los siguientes valores: 
+            1: verano, 2: otoño, 3: invierno, 4: primavera
+        </p>
+            <br />
+    <table border="2px" cellpadding="5" align="center" bgcolor="aqua">
+        <tr><td><a href="./index.html">Inicio</a></td></tr>
+    </table>  
+    </body>
+</html>

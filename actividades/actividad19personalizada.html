@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+    <head>    
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title>Promedio</title>
+        <style>
+            input{
+                width: 300px;
+                height: 50px;
+            }
+            h1 {
+                width: 450px;
+                height: 100px;
+                background-color: rgb(142, 68, 173);
+                font-size: 40px;
+            }
+            h2 {
+                width: 450px;
+                height: 60px;
+                background-color: rgb(142, 68, 173);
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body> 
+        <br><h1>Calificaciones de semestre</h1><br> 
+        <div class="count">
+        <td>
+            <input type="text" id="num1" class="subcount" placeholder=" 1er semestre">
+            <input type="text" id="num2" class="subcount" placeholder=" 2do semestre"><br><br>
+            <input type="text" id="num3" class="subcount" placeholder=" 3er semestre">
+            <input type="text" id="num4" class="subcount" placeholder=" 4to semestre"><br><br>
+            <input type="text" id="num5" class="subcount" placeholder=" 5to semestre">
+            <input type="text" id="num6" class="subcount" placeholder=" 6to semestre"><br>
+        </td>
+        </div>
+
+        <h2>Resultados</h2>
+
+        <div class="count">
+
+            <td><input type="button" value="calcular" id="button" onclick="calcular()"></td><br><br>
+
+            <input type="text" id="promed" class="subcount" placeholder="promedio final">
+
+        </div>
+
+        <script>
+
+            function contenido(id){
+                return document.getElementById(id);
+            }
+            function calcular(){
+                var a=parseInt(contenido("num1").value);
+                var b=parseInt(contenido("num2").value);
+                var c=parseInt(contenido("num3").value);
+                var d=parseInt(contenido("num4").value);
+                var e=parseInt(contenido("num5").value);
+                var f=parseInt(contenido("num6").value);
+                var total=(a + b + c + d + e + f)/6;
+                contenido("promed").value=total;
+            }
+        </script>
+        <br />
+    <table border="2px" cellpadding="5" align="center" bgcolor="aqua">
+        <tr><td><a href="./index.html">Inicio</a></td></tr>
+    </table>  
+    </body>
+</html>

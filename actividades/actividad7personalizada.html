@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset= "UTF-8">
+        <meta charset="UTF-8">
+        <title>La Musica</title>
+    </head>
+    <body>
+        <div style="width: 500px;">
+            <h3>¿Ques es la Musica?</h3>
+            <p>Es el arte de combinar sonidos en una secuencia temporal atendiendo a las leyes de la armonía,
+               la melodía y el ritmo, o de producir con instrumentos musicales.
+               Tambien se puede definir como un conjunto de sonidos sucesivos combinados según el arte,
+               que por lo general producen un efecto estético o expresivo y resultan agradable al oído.</p>
+
+            <h3>Caracteristicas</h3>
+            <p>La musica puede definirse a muy grandes razgos como una sonoridad organizada,
+               coherente, significativa. Se caracteriza por el empleo de los sonidos 
+               (y de los instrumentos para producirlos) con el objetivo de producir una secuencia
+               estéticamente apreciable y significativa.</p>       
+        </div>
+
+        <div style="width: 500px;">
+            <h3>¿Como se Hace Musica?</h3>
+            <p>Los sonidos musicales son producidos por algunos procesos físicos que tienen un
+               carácter periódico, una cuerda vibrando, el aire en el interior de un instrumento 
+               de viento, etc. Aun siendo muy diferentes entre ellos, estos procesos pueden ser descritos 
+               con un mismo modelo matemático.</p> 
+           <form action="http://www.example.com/login.php">
+
+            <p><b>Acontinuación una pequeña encuesta:</b></p>
+            <p>Username:
+                <input type="text" name="username" size="15" maxlength="30" />
+            </p>
+            <p>Password:
+                <input type="text" name="password" size="15" maxlength="30" />
+            </p>
+        </form>
+        <form action="http://www.example.com/comments.php">
+            <p>¿Qué te pareció este trabajo?</p>
+            <textarea name="comments" cols="20" rows="4">Ingrese sus comentarios...</textarea>
+        </form>   
+           <form action="http://www.example.com/profile.php">
+                <p>Por favor, seleccione su género de musica favorito:
+                    <br />
+                    <input type="radio" name="genre" value="rock" checked="checked" /> Rock 
+                    <input type="radio" name="genre" value="pop" /> Pop 
+                    <input type="radio" name="genre" value="jazz" /> Jazz 
+                    <input type="radio" name="genre" value="soul" /> Soul
+                    <input type="radio" name="genre" value="blues" /> Blues 
+                    <input type="radio" name="genre" value="flamenco" /> Flamenco 
+                    <input type="radio" name="genre" value="salsa" /> Salsa 
+                    <input type="radio" name="genre" value="reggeaeton" /> Reggaeton 
+                    <input type="radio" name="genre" value="tango" /> Tango
+                </p>
+
+                <p>Por favor, seleccione sus servicios de música favoritos:
+                    <br />
+                    <input type="checkbox" name="service" value="intines" checked="checked" /> Itunes 
+                    <input type="checkbox" name="service" value="deezer" /> Deezer 
+                    <input type="checkbox" name="service" value="spotify" /> Spotify 
+                    <input type="checkbox" name="service" value="youtube" /> Youtube
+                </p>
+
+                <p>¿En qué dispositivo escuchas música?</p>
+                <select name="devices">
+                    <option value="ipod">Ipod</option>
+                    <option value="radio">Radio</option>
+                    <option value="computador">Computador</option>
+                    <option value="celular">Celular</option>
+
+                </select>
+                <p>¿tocas algún instrumentos?
+                    (puede seleccionar más de una opción manteniendo presionada la tecla control)</p>
+                <select name="instruments" size="3" multiple="multiple">
+                    <option value="instr viento" selected="selected">Instr de Viento</option>
+                    <option value="instr cuerda" selected="selected">Instr de Cuerda</option>
+                    <option value="instr percusion" selected="selected">Istr de Percusion</option>
+                    <option value="ninguno">Ninguno</option>
+                </select>
+           </form>
+           <form action="http://www.example.com/upload.php" method="post">
+                 <p>sube tu canción favorita en formato MP3:</p>
+                 <input type="file" name="user-song" /><br />
+                 <input type="submit" value="upload" />
+        </form>
+           <form action="https://www.instagram.com/stelitacasper/">
+                <p>suscríbete a nuestra lista de correo electrónico:</p>
+                <input type="text" name="email" />
+                <input type="submit" name="subscribe" value="subscribe" />
+                <br />
+                <input type="text" name="email" />
+                <input type="image" src="subscribe1.png" width="100" height="20" />
+        </form>
+        <br />
+
+            <form action="http://www.example.com/subscribe.php">
+                <label> Edad: <input type="text" name="age" /></label> 
+                <br />
+
+                Genero:
+                <input id="female" type="radio" name="gender" value="f">
+                <label for="female">Female</label>
+                <input ide="male" type="radio" name="gender" value="f">
+                <label for="male">Male</label> 
+            </form>
+            <br />
+            <form action="http://www.example.com/subscribe.php">
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+                    <label>Email:<br /><input type="text" name="email"/></label><br />
+                    <label>Telefono Movil:<br /><input type="text" name="mobile" /></label><br />
+                    <label>Telefono Fijo:<br /><input type="text" name="telephone" /></label>
+                </fieldset>
+            </form>
+            <br />
+            <form action="http://www.example.com/login/" method="post">
+                 <label for="username">Username:</label>
+                 <input type="text" name="username" id="username" required="required" /><br />
+                 <label for="password">Password:</label>
+                 <input type="password" name="password" id="password" required="required" />
+                 <input type="submit" value="submit" />
+            </form>
+            <br />
+            <form action="http://www.example.com/bookings/" method="post">
+                <label for="username">Fecha de salida:</label>
+                <input type="date" name="depart" />
+                <input type="submit" value="submit" />
+            </form>
+            <br />
+            <form action="http://www.example.com/subscribe.php">
+                <fieldset>
+                    <legend>Sus Datos:</legend>
+                    <label>Nombre:<input type="text" name="nombre" /></label>
+                    <br />
+                    <label>Email:<input type="text" name="email" /></label>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Su opinión</legend>
+                    <p>
+                        ¿como se enteraron de nosotros?
+                        <select name="devices">
+                            <option value="google">Google</option>
+                        </select>
+                    </p>
+                    <p>¿Volveria a Visitarnos?
+                    <br />
+                    <input type="radio" name="genre" value="si"/>Si 
+                    <input type="radio" name="genre" value="no"/>No  
+                    <input type="radio" name="genre" value="quizas"/>Quizas
+                </p>
+                <p>Coentarios:</p>
+                <textarea name="comments" cols="20" rows="4"></textarea>
+                <p>
+                    <input type="checkbox" name="service" value="inscribete" checked="checked"/>Inscribete para actualizaciones por correo electrónico
+                    <br />
+                    <input type="submit" name="submit review" value="submit review"/>
+                </p>
+                </fieldset>
+            </form>
+        </div>
+        <br />
+    <table border="2px" cellpadding="5" align="center" bgcolor="aqua">
+        <tr><td><a href="./index.html">Inicio</a></td></tr>
+    </table>
+    </body>
+</html>
